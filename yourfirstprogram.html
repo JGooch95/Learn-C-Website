@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<!-- CSS Link -->
+		<link type="text/css" rel="stylesheet" media="screen" href="Style1.css">
+		<!-- Sets the character set -->
+		<meta charset="UTF-8">
+		<!-- Sets the page title -->
+		<title>Learn C++: Home</title>
+	</head>
+	
+	<body>
+		<header>
+			<!-- The page title / Logo (Which is also a button to go to the home page) -->
+			<a href="home.html">
+				<h1><span style="color: blue;">LEARN</span><span style="color: white;"> C++</span></h1>
+			</a>
+		</header>
+		
+		<!-- Navigation Bar -->
+		<nav>
+			<ul>
+				<!-- Top level menu buttons -->
+				<li><a href="home.html">Home</a></li>
+				<li><a href="programmingstandards.html">Programming Standards</a></li>	
+				<li><a href="thebasicprogrammingconstructs.html">The basic programming constructs</a></li>
+				<li><a href="variables.html">Variables</a></li>
+				<li><a>Tutorials</a>
+					<ul>
+						<!-- Sub level menu buttons -->
+						<li><a href="yourfirstprogram.html"> Your First Program</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	
+		<section class="main">
+			<!-- Page title -->
+			<h2>Your First Program</h2>
+			
+			<!-- Page description -->
+			<p>
+				In this tutorial I will be teaching you the first basic tutorial taught to most people learning c++ at the start, 
+				Outputting text onto the screen.
+			</p>
+			
+			<!-- Step 1 -->
+			<section class="instructionBox">
+				<!-- Step 1: Heading -->
+				<section class="step">
+					<p>Step 1</p>
+				</section>
+				
+				<!-- Step 1: Instruction -->
+				<section class="instruction">
+					<p>
+						Firstly you will need to Import the libraries required for the commands to be used in the program. To achieve this you will need to enter 
+						<span><code> #include &lt; iostream &gt; </code></span>
+					</p>
+				</section>
+				
+				<!-- Step 1: Question 1 -->
+				<section class="questionBox">
+					<section class="question">
+						<p>
+							What are libraries?
+						</p>
+					</section>
+			
+					<section class="answer">
+						<p>
+							Libraries are groups of code kept outside of software which can be imported to be used as instructions within a program.
+							To do this you will be using the iostream library which will have the common c++ commands within it.
+						</p>
+					</section>
+				</section>
+			</section>	
+			
+			<!-- Step 2 -->
+			<section class="instructionBox">
+				<!-- Step 2: Heading -->
+				<section class="step">
+					<p>Step 2</p>
+				</section>
+				
+				<!-- Step 2: Instruction -->
+				<section class="instruction">
+					<p>
+						Secondly you should type <span><code>using namespace std;</code></span> This instruction replaces the start of every instruction
+						using the standard libraries with the <span><code>std:: namespace </code></span>
+					</p>
+				</section>
+				
+				<!-- Step 2: Question 1 -->
+				<section class="questionBox">
+					<section class="question">
+						<p>
+							What is a namespace?
+						</p>
+					</section>
+				
+					<section class="answer">
+						<p>
+							A namespace is an item which goes before an instruction in a library to make it unique.
+						</p>
+					</section>
+				</section>
+				
+				<!-- Step 2: Question 2 -->
+				<section class="questionBox">
+					<section class="question">
+						<p>
+							Why would that need to happen?
+						</p>
+					</section>
+			
+					<section class="answer">
+						<p>
+							This needs to happen as 2 libraries could have the same instruction name therefore causing the software to crash.
+						</p>
+					</section>
+				</section>
+			</section>
+			
+			<!-- Step 3 -->
+			<section class="instructionBox">
+				<!-- Step 3: Heading -->
+				<section class="step">
+					<p>Step 3</p>
+				</section>
+				
+				<!-- Step 3: Instruction -->
+				<section class="instruction">
+					<p>
+						Next you will need to make a loop which will contain the contents of the software.
+						To do this type in <span><code>int main(){}</code></span>
+						everything contained within the {} is within the main function, the main function is the function which is run when the software begins
+					</p>
+				</section>
+				
+				<!-- Step 3: Question 1 -->
+				<section class="questionBox">
+					<section class="question">
+						<p>
+							What is a function?
+						</p>
+					</section>
+			
+					<section class="answer">
+						<p>
+							A function is a group of instructions which can be called to run at any time in the code.
+						</p>
+					</section>
+				</section>
+			</section>
+			
+			<!-- Step 4 -->
+			<section class="instructionBox">
+				<!-- Step 4: Heading -->
+				<section class="step">
+					<p>Step 4</p>
+				</section>
+				
+				<!-- Step 4: Instruction -->
+				<section class="instruction">
+					<p>
+						Within the  <span><code>int main {}</code></span> Type <span><code>cout&lt;&lt;"Hello World";</code></span>
+						This instruction tells the program to output hello world in to the console (The black window which appears when running the program.)
+					</p>
+				</section>
+			</section>
+			
+			<!-- Step 5 -->
+			<section class="instructionBox">
+				<!-- Step 5: Heading -->
+				<section class="step">
+					<p>Step 5</p>
+				</section>
+				
+				<!-- Step 5: Instruction -->
+				<section class="instruction">
+					<p>
+						Then type in <span><code>system("pause");</code></span>
+						This tells the computer to wait for the user of the software to wait until the user inputs something.
+					</p>
+				</section>
+			</section>
+			
+			<!-- The End result -->
+			<section class="instructionBox">
+				<!-- The End result: Heading -->
+				<section class="step">
+					<p>The Program</p>
+				</section>
+				
+				<!-- The End result: Description -->
+				<section class="instruction">
+					<p>
+						Congratulations you have just written your first c++ program this is what it should look like.
+					</p>
+					
+					<p>
+						Your code should look like so...
+					</p>
+					
+					<!-- The End result: Code -->
+					<pre><code>
+#include &lt; iostream &gt;
+
+using namespace std;
+
+int main()
+{
+	<span class="comment">//Outputs Hello World to the screen.</span>
+	cout &lt;&lt; "Hello World";
+	
+	<span class="comment">//Pauses the screen and waits to continue.</span>
+	system("pause");
+}
+					</code></pre>
+						
+					<p>
+						And when it is run it should look like this...
+					</p>
+					
+					<!-- The End result: Image -->
+					<img src="Tut1-Final.png" alt="Hello World Program" style="max-height:342px; max-width:677px">
+				</section>
+			</section>
+		</section>
+		
+		<footer>
+		<!-- Footer showing copyright, my name and p number -->
+			<span> &#169;2015 Jonny Gooch P14141535</span>
+		</footer>
+	</body>
+</html>

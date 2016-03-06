@@ -1,0 +1,132 @@
+/* Sets the font size of the step title*/
+.step{
+	font-size: 20px;
+}
+/* Sets the border colour of the question box*/
+.questionBox{
+	border-color: green;
+}
+/* Sets the font size of the title and reduces the empty space
+   taken by the title & Sets the title to a code font*/
+h1{
+	font-size: 60px;
+	line-height: 20px;
+	font-family: "Agency FB";
+}
+/* Sets the default font to Arial and the background to an image */
+html{
+	font-family: "Arial";
+	background-image: url("circuit_board_wallpaper.png");
+}
+/* Adds padding to the edges of the screen*/
+body{
+	padding: 0px 10px 10px 10px;
+}
+/* Makes images scale depending on the screen size.*/
+img{
+	height: auto; 
+	width: 100%;
+}
+/* Gives the footer a margin to meet up with the main window.*/
+footer{
+	margin-left: 25px;
+}
+/* Gives each item on the navigation bar padding, removes the list styling
+   Makes the display of the items inline and the contents within them block
+   And aligns the link with the center of the button*/
+nav ul{
+	padding: 0 10px;  
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+}
+/* Makes Comments within code green */ 
+.comment{ 
+	Color: Green;
+}
+/* Makes the menu items float objects and gives them a width*/
+nav ul li {
+	float: left;
+	width: 200px;
+}
+/* Gives the nav buttons a set height*/
+nav ul li a { 
+	height: 40px;
+}
+/* Gives the submenu button container a padding of 0, sets their top to the bottom of the 
+   navigation bar and disables their display as long as the menu is not hovered over.*/
+nav ul ul {
+	padding: 0;
+	top: 100%;
+	display: none;
+}
+/* Sets the float to none for each of the sub menu buttons*/
+nav ul ul li {
+	float: none; 
+}
+/* Adds padding to the footer and main content box*/
+footer, .main{
+	padding: 10px;
+}
+/*Sets the links in the navigation bar to a block display setting.*/
+/*Also sets the links to a block display when hovered over. */
+nav ul li a, nav ul li:hover > ul{
+	display: block;
+}
+/* Sets the footer and drop down navigation to absolute.*/
+footer, nav ul ul{
+	position: absolute;
+}
+/* Sets the text decoration for the links to none.*/
+header a, nav ul li a {
+	text-decoration: none;
+}
+/* Sets all of the objects in the navigation bar to a relative position */
+nav ul, nav ul ul li{
+	position: relative;
+}
+/* Makes all text and all links within the navigation bar white. */
+html, nav a{
+	color: white;
+}
+/* Adds padding to all of the buttons in the navigation bar.*/
+nav ul li a, nav ul ul li a {
+	padding: 5px 10px;
+}
+/* Makes the options in the navigation bar blue when hovered over.*/
+nav ul li:hover , nav ul ul li a:hover {
+	background-color: blue;  
+}
+/* Gives the footer, the navigation bar, the main content box and 
+   each of the question boxes a border. */
+footer, nav ul, .main, .questionBox{
+	border-radius: 10px;
+	border-width: 3px;
+	border-style: solid;
+}
+
+/* Removes the top edge of the border for the extension of the 
+   navigation bar and the footer */
+nav ul ul, footer{
+	border-top-left-radius: 0px; 
+	border-top-right-radius: 0px;   
+	border-top: 0px;
+}
+/* Sets the Question and Step titles to bold*/
+.question, .step{
+	font-weight: bold;
+}
+/* Sets the padding and margin of the Question and Instruction boxes */
+.questionBox, .instructionBox{
+	padding: 5px 20px;
+	margin-bottom: 10px;
+}
+/* Sets the border colour of the main content box, the navigation bar and 
+   the footer to light blue. */
+.main, nav ul, footer{
+	border-color: #00fcff;
+}
+/* Sets all of the content boxes backgrounds to dark brown. */
+html, .main, nav ul, footer, .questionBox, .instructionBox{
+	background-color: #111111;
+}

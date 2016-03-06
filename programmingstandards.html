@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<!-- CSS Link -->
+		<link type="text/css" rel="stylesheet" media="screen" href="Style1.css">
+		<!-- Sets the character set -->
+		<meta charset="UTF-8">
+		<!-- Sets the page title -->
+		<title>Learn C++: Home</title>
+	</head>
+	
+	<body>
+		<header>
+			<!-- The page title / Logo (Which is also a button to go to the home page) -->
+			<a href="home.html">
+				<h1><span style="color: blue;">LEARN</span><span style="color: white;"> C++</span></h1>
+			</a>
+		</header>
+		
+		<!-- Navigation Bar -->
+		<nav>
+			<ul>
+				<!-- Top level menu buttons -->
+				<li><a href="home.html">Home</a></li>
+				<li><a href="programmingstandards.html">Programming Standards</a></li>	
+				<li><a href="thebasicprogrammingconstructs.html">The basic programming constructs</a></li>
+				<li><a href="variables.html">Variables</a></li>
+				<li><a>Tutorials</a>
+					<ul>
+						<!-- Sub level menu buttons -->
+						<li><a href="yourfirstprogram.html"> Your First Program</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		
+		<section class="main">
+			<!-- Page title -->
+			<h2>Programming Standards</h2>
+			
+			<!-- Page description -->
+			<p>
+				When programming the code starts to build up and eventually reading the code within a program may become difficult to understand and maintain
+				 so to ensure the code is kept in a maintainable standard programmers tend to adhere to a set of programming standards / rules.
+			</p>
+			
+			<!-- Indentation heading and description" -->
+			<section class="step">
+				<p>Indentation</p>
+			</section>
+			<p>
+				Indentation is where anything which is within a construct gets indented, this is done by pressing the tab key. This means that if the programmer wants to 
+				know what is within a construct they just have to look at how far out the text is. e.g.<br>
+			</p>
+			
+			<!-- Indentation Example -->
+			<pre><code>
+if (x == 1)
+{
+	x += 1;
+}
+			</code></pre>
+				
+			<p>
+				The space before the x += 1 is an indent showing that within the if (x==1) there is a x+=1.
+				So the line reads if x is equal to one add one to x.
+			</p>
+			
+			<!-- Naming conventions heading and description" -->
+			<section class="step">
+				<p>Naming Conventions</p>
+			</section>
+			<p>
+				With naming conventions the programmers use a certain way of naming their variables to stay consistent.
+				This may be by using uppercase notation which means making the start of every new word in the variable name uppercase.<br>
+				e.g.<br> 
+				<br>
+				<span><code>Name</code></span><br>
+				<br>
+				A common notation used is to use the upper-case notation with the data type notated at the front of the
+				name.<br>
+				e.g.<br>
+				<br>
+				
+				<span><code>strName </code></span>(str = string).
+			</p>
+			
+			<!-- Segmentation heading and description" -->
+			<section class="step">
+				<p>Segmentation</p>
+			</section>
+			<p>
+				Segmentation is when you break down code into logical chunks. This is done by breaking the code up into sets of instructions which
+				perform a single task.<br>
+				e.g.
+			</p>
+			
+			<!-- Segmentation Example -->
+			<pre><code>
+cout &lt;&lt; "What is your name?";
+cin &gt;&gt; strName;
+
+cout &lt;&lt; "Your name is " &lt;&lt; strName;
+			</code></pre>
+			
+			<p>
+				This code is broken into 2 parts, The user entry and the output as they are 2 logical blocks of code.
+				The code above outputs text to the sceen asking the users name, then it waits for the user to enter something,
+				What they enter is stored as strName and then their name is output to the screen with a message.
+			</p>
+			
+			<!-- Commenting heading and description" -->
+			<section class="step">
+				<p>Commenting</p>
+			</section>
+			<p>
+				To ensure whoever reads the code understands what is going on; the code should be commented. These will be lines of text which are within
+				the code which won't be read by the computer when running the software. These comments put into the code should be as short and precise as
+				possible to be the most efficient.<br>
+				e.g.
+			</p>
+			
+			<!-- Commenting Example 1 -->
+			<pre><code>
+<span class="comment">//User input</span>
+cout &lt;&lt; "What is your name?";
+cin &gt;&gt; strName;
+
+<span class="comment">//Output</span>
+cout &lt;&lt; "Your name is " &lt;&lt; strName;
+			</code></pre>
+				
+			<p>
+				The text with 2 slashes next to them are the comments. To signify a comment you have to put 2 slashes (//comment) if it pans over a single line and
+				a / and an asterisk (/*comment*/) if it goes over multiple lines.<br>
+				e.g.
+			</p>
+				
+			<!-- Commenting Example 2 -->
+			<pre><code>
+<span class="comment">/* User input:</span>
+<span class="comment">Prompts the user and retrieves the data. */</span>
+cout &lt;&lt; "What is your name?";
+cin &gt;&gt; strName;
+					
+<span class="comment">//Output</span>
+cout &lt;&lt; "Your name is " &lt;&lt; strName;
+			</code></pre>
+		</section>
+		
+		<footer>
+		<!-- Footer showing copyright, my name and p number -->
+			<span> &#169;2015 Jonny Gooch P14141535</span>
+		</footer>
+	</body>
+</html>
